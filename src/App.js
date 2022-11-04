@@ -1,5 +1,6 @@
 import Menu from "./components/Menu";
 import Home from "./components/Home";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <div className="container-body">
         <Menu></Menu>
         <Home></Home>
+        <Skills></Skills>
       </div>
     </>
   );

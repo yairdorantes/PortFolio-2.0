@@ -28,9 +28,9 @@ const Home = () => {
                 <strong>{texts.position}</strong>
               </div>
               <p className="my-description">{texts.master}</p>
-              <button>
-                <div class="svg-wrapper-1">
-                  <div class="svg-wrapper">
+              <button className="btn-contact-me">
+                <div className="svg-wrapper-1">
+                  <div className="svg-wrapper">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"

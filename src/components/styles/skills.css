@@ -1,0 +1,57 @@
+.skill-section {
+  margin-top: 550px;
+}
+.container-skills {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  margin-top: 25%;
+}
+#html {
+  animation-delay: 1s;
+}
+#css {
+  animation-delay: 2s;
+}
+#js {
+  animation-delay: 3s;
+}
+#react {
+  animation-delay: 4;
+  /* width: 160px; */
+}
+#python {
+  animation-delay: 5s;
+}
+#django {
+  animation-delay: 6s;
+}
+.skill {
+  transition: ease-in-out 1s;
+  animation: circleMove 7s infinite linear;
+  position: absolute;
+}
+
+.skill-icon {
+  width: 50px;
+  /* margin: 100px; */
+}
+
+.container-skill-titles {
+  text-align: center;
+}
+
+.skill-title {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+@keyframes circleMove {
+  0% {
+    transform: rotate(0deg) translateY(150px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateY(150px) rotate(-360deg);
+  }
+}

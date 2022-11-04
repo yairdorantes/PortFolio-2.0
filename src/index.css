@@ -11,7 +11,8 @@ body {
   /* display: block; */
   font-family: var(--body-font);
   font-family: "Poppins", sans-serif;
-  overflow: hidden;
+  /* overflow: hidden; */
+  overflow-x: hidden;
   /* background-color: ; */
 }
 

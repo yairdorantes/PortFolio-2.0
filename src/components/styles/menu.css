@@ -27,7 +27,7 @@
   width: 28px;
 }
 
-button {
+.btn-contact-me {
   font-family: inherit;
   font-size: 20px;
   background: royalblue;
@@ -42,31 +42,31 @@ button {
   transition: all 0.2s;
 }
 
-button span {
+.btn-contact-me span {
   display: block;
   margin-left: 0.3em;
   transition: all 0.3s ease-in-out;
 }
 
-button svg {
+.btn-contact-me svg {
   display: block;
   transform-origin: center center;
   transition: transform 0.3s ease-in-out;
 }
 
-button:hover .svg-wrapper {
+.btn-contact-me:hover .svg-wrapper {
   animation: fly-1 0.6s ease-in-out infinite alternate;
 }
 
-button:hover svg {
-  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+.btn-contact-me:hover svg {
+  transform: translateX(2.8em) rotate(45deg) scale(1.1);
 }
 
-button:hover span {
-  transform: translateX(5em);
+.btn-contact-me:hover span {
+  transform: translateX(10em);
 }
 
-button:active {
+.btn-contact-me:active {
   transform: scale(0.95);
 }
 

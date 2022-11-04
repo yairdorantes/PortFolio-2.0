@@ -18,6 +18,7 @@ const translations = {
     position: "Desarrollador Full Stack",
     master: introEs,
     btnContact: "Contactame",
+    skillSubtitle: "Tecnologías con las que he trabajado",
   },
   en: {
     home: "Home",
@@ -28,6 +29,7 @@ const translations = {
     position: "Full Stack developer",
     master: introEn,
     btnContact: "Contact me",
+    skillSubtitle: "Technologies I have worked with",
   },
 };
 
