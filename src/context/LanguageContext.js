@@ -11,7 +11,7 @@ const introEn =
 const translations = {
   es: {
     home: "Inicio",
-    skills: "Habiliades",
+    skills: "Habilidades",
     portfolio: "Portafolio",
     about: "Sobre mí",
     greeting: "Hola, soy Yair",

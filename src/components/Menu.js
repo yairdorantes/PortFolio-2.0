@@ -3,8 +3,12 @@ import LanguageContext from "../context/LanguageContext";
 import "./styles/menu.css";
 import mx from "./media/mexico.png";
 import eua from "./media/eua.png";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import { useScrollDirection } from "react-use-scroll-direction";
 const Menu = () => {
+  const { isScrollingDown, scrollDirection } = useScrollDirection();
   const [lang, setLang] = useState("es");
+  const [down, setDown] = useState(false);
   const { texts, handleLanguage } = useContext(LanguageContext);
   const changeLanguage = () => {
     console.log(lang);
@@ -15,16 +19,37 @@ const Menu = () => {
   useEffect(() => {
     changeLanguage();
   }, []);
+  useEffect(() => {
+    scrollDirection === "DOWN" && setDown(true);
+    scrollDirection === "UP" && setDown(false);
+  }, [scrollDirection]);
 
   return (
     <>
-      <div className="container-menu-portfolio">
+      {/* {isScrollingDown && setDown(true)} */}
+      <div
+        className="container-menu-portfolio"
+        style={{ marginTop: down && "-10%" }}
+      >
         <div className="my-name-menu">
           <strong>Yair</strong>
         </div>
         <div className="menu-options">
-          <div>{texts.home}</div>
-          <div>{texts.skills}</div>
+          <div>
+            <AnchorLink className="container-link-portfolio" href="#home">
+              {texts.home}
+            </AnchorLink>
+          </div>
+
+          <div>
+            <AnchorLink
+              className="container-link-portfolio"
+              href="#skills-section"
+            >
+              {texts.skills}
+            </AnchorLink>
+          </div>
+
           <div>{texts.portfolio}</div>
           <div>{texts.about}</div>
           <div onClick={changeLanguage}>
@@ -34,15 +59,8 @@ const Menu = () => {
               alt=""
             />
           </div>
-          {/* <div>
-            <img src={eua} alt="" />
-          </div> */}
-          <hr />
-          {/* <h2>jaaj</h2> */}
         </div>
-        {/* <hr /> */}
       </div>
-      {/* <div>jaaj</div> */}
     </>
   );
 };

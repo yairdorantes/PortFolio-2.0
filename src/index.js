@@ -7,11 +7,9 @@ import { LanguageProvider } from "./context/LanguageContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <LanguageProvider>
-      <App />
-    </LanguageProvider>
-  </React.StrictMode>
+  <LanguageProvider>
+    <App />
+  </LanguageProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

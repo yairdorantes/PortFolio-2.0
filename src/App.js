@@ -1,6 +1,7 @@
 import Menu from "./components/Menu";
 import Home from "./components/Home";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <Menu></Menu>
         <Home></Home>
         <Skills></Skills>
+        <Projects></Projects>
       </div>
     </>
   );

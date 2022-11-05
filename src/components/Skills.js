@@ -5,37 +5,67 @@ import django from "./media/django.png";
 import html from "./media/html.png";
 import css from "./media/css.png";
 import reacts from "./media/react.png";
+import git from "./media/git.png";
+import github from "./media/github.png";
+import sql from "./media/sql.png";
+import json from "./media/json.png";
 import LanguageContext from "../context/LanguageContext";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
+const iconImage = [
+  html,
+  css,
+  js,
+  reacts,
+  python,
+  django,
+  sql,
+  json,
+  git,
+  github,
+];
+
 const Skills = () => {
+  const [stateAnimation, setStateAnimation] = useState(0);
   const { texts } = useContext(LanguageContext);
+  const moveIcons = () => {
+    let cont = 0;
+
+    const intervalo = setInterval(() => {
+      cont++;
+      if (cont > 9) {
+        cont = 0;
+      }
+      setStateAnimation(cont);
+    }, 1300);
+  };
+  useEffect(() => {
+    moveIcons();
+  }, []);
+
   return (
     <>
-      <section className="skill-section">
-        <div className="container-skill-titles">
-          <div className="skill-title">{texts.skills}</div>
-          <div>{texts.skillSubtitle}</div>
-        </div>
-        <div className="container-skills">
-          <div id="html" className="skill">
-            <img className="skill-icon" src={html} alt="" />
+      <section className="section-top-skill">
+        <section className="skill-section" id="skills-section">
+          <div className="container-skill-titles">
+            <div className={"skill-title"}>{texts.skills}</div>
+            <div>{texts.skillSubtitle}</div>
           </div>
-          <div id="css" className="skill">
-            <img className="skill-icon" src={css} alt="" />
+          <div className="container-skills">
+            {iconImage.map((icon, key) => {
+              return (
+                <div key={key} className="skill">
+                  <img
+                    className={
+                      stateAnimation === key ? "skill-icon move" : "skill-icon"
+                    }
+                    src={icon}
+                    alt=""
+                  />
+                </div>
+              );
+            })}
           </div>
-          <div id="js" className="skill">
-            <img className="skill-icon" src={js} alt="" />
-          </div>
-          <div id="react" className="skill">
-            <img className="skill-icon react" src={reacts} alt="" />
-          </div>
-          <div id="python" className="skill">
-            <img className="skill-icon" src={python} alt="" />
-          </div>
-          <div id="django" className="skill">
-            <img className="skill-icon" src={django} alt="" />
-          </div>
-        </div>
+        </section>
       </section>
     </>
   );

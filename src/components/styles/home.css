@@ -1,16 +1,20 @@
+#home {
+  /* background-color: #081426;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 72px)); */
+}
 .container-home {
   display: flex;
   width: 100%;
+  height: 100vh;
   justify-content: flex-start;
-
-  margin-left: 30px;
+  margin-left: 10%;
 }
 .container-all-mine {
   margin-top: 10%;
   /* margin-left: 20%; */
 }
 .container-text-image-home {
-  margin-left: 20%;
+  margin-left: 30%;
   /* margin: 100px; */
 }
 .container-all-mine {

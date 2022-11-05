@@ -1,22 +1,32 @@
 .container-menu-portfolio {
   display: flex;
+  width: 100vw;
+  /* max-width: 100%; */
+  position: fixed;
+  background-color: white;
   justify-content: space-between;
-  width: 95%;
-  /* margin-left: 5%; */
+  /* margin-top: -60px; */
+  transition: 0.8s;
+  z-index: 1;
 }
+
 .my-name-menu {
   /* margin: 0; */
   margin: 30px;
   font-size: 22px;
+  margin-left: 10%;
 }
 
-.container-menu-portfolio > div {
-  /* padding: 5px; */
+.container-link-portfolio {
+  text-decoration: none;
+  color: black;
 }
 .menu-options {
   display: flex;
   font-weight: 900;
   align-items: center;
+  margin-right: 10%;
+  /* right: 50%; */
 }
 
 .menu-options > div {

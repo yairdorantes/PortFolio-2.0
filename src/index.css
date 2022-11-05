@@ -4,20 +4,19 @@
   --body-font: "Poppins", sans-serif;
   /* --weight-font:font */
 }
-
-body {
+* {
   margin: 0;
+  padding: 0;
+}
+body {
   box-sizing: border-box;
-  /* display: block; */
   font-family: var(--body-font);
   font-family: "Poppins", sans-serif;
-  /* overflow: hidden; */
   overflow-x: hidden;
-  /* background-color: ; */
 }
-
 .container-body {
   /* margin: 10px; */
-  width: 70%;
+  /* width: 70%; */
+  /* padding: 100px; */
   margin: auto;
 }
