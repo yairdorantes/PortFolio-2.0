@@ -19,6 +19,7 @@ const translations = {
     master: introEs,
     btnContact: "Contactame",
     skillSubtitle: "Tecnologías con las que he trabajado",
+    cv: "Ver/Descargar CV",
   },
   en: {
     home: "Home",
@@ -30,6 +31,7 @@ const translations = {
     master: introEn,
     btnContact: "Contact me",
     skillSubtitle: "Technologies I have worked with",
+    cv: "See/Download CV",
   },
 };
 

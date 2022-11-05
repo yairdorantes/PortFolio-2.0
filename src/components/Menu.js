@@ -40,7 +40,6 @@ const Menu = () => {
               {texts.home}
             </AnchorLink>
           </div>
-
           <div>
             <AnchorLink
               className="container-link-portfolio"
@@ -49,8 +48,14 @@ const Menu = () => {
               {texts.skills}
             </AnchorLink>
           </div>
-
-          <div>{texts.portfolio}</div>
+          <div>
+            <AnchorLink
+              href="#section-portfolio"
+              className="container-link-portfolio"
+            >
+              {texts.portfolio}
+            </AnchorLink>
+          </div>
           <div>{texts.about}</div>
           <div onClick={changeLanguage}>
             <img

@@ -9,6 +9,7 @@ import git from "./media/git.png";
 import github from "./media/github.png";
 import sql from "./media/sql.png";
 import json from "./media/json.png";
+import cv from "./media/doc.png";
 import LanguageContext from "../context/LanguageContext";
 import { useContext, useEffect, useState } from "react";
 const iconImage = [
@@ -64,6 +65,12 @@ const Skills = () => {
                 </div>
               );
             })}
+          </div>
+          <div className="container-btn-cv">
+            <img className="cv" src={cv} alt="" />
+            <button className="btn-cv">
+              <strong>{texts.cv}</strong>
+            </button>
           </div>
         </section>
       </section>
