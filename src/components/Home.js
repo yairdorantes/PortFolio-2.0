@@ -115,6 +115,22 @@ const Home = () => {
                   </div>
                   <span>{texts.btnContact}</span>
                 </button>
+                <div className="container-social-media-work2">
+                  <div>
+                    <a href="https://www.linkedin.com/in/yair-dorantes-25a74a1a8/">
+                      <img
+                        className="social-media-work2"
+                        src={linkedin}
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div>
+                    <a href="https://github.com/yairdorantes">
+                      <img className="social-media-work2" src={github} alt="" />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="headshot headshot-2"></div>

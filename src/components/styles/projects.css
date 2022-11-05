@@ -3,6 +3,8 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  margin-bottom: 100px;
+  /* padding: 10px; */
   /* height: 500px; */
   /* justify-content: center; */
   /* width: 80%; */
@@ -19,14 +21,16 @@
 }
 
 .container-video-card > video {
+  /* padding: 10px; */
   /* width: 400px; */
-  width: 100%;
+  width: 98%;
   /* height: 250px; */
   /* max-height: 250px; */
   border-radius: 10px;
 }
 .image-project {
-  width: 100%;
+  width: 98%;
+
   border-radius: 10px;
   min-height: 220px;
 }

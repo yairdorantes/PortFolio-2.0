@@ -8,6 +8,8 @@ import portfolio from "./media/portfolio.png";
 import home from "./media/home.png";
 import about from "./media/profile.png";
 import LanguageContext from "../context/LanguageContext";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+
 const MobileMenu = () => {
   const { texts, handleLanguage } = useContext(LanguageContext);
   const [lang, setLang] = useState("es");
@@ -29,19 +31,47 @@ const MobileMenu = () => {
       >
         <div>
           <img style={{ width: "25px" }} src={home} alt="" />
-          <div>{texts.home}</div>
+          <div>
+            <AnchorLink
+              onClick={handleMenuBar}
+              className="anchor-mobile"
+              href="#home"
+            >
+              {texts.home}
+            </AnchorLink>
+          </div>
         </div>
         <div>
-          <img style={{ width: "25px" }} src={skills} alt="" />
-          <div>{texts.skills}</div>
+          <AnchorLink
+            onClick={handleMenuBar}
+            className="anchor-mobile"
+            href="#skills-section"
+          >
+            <img style={{ width: "25px" }} src={skills} alt="" />
+            <div>{texts.skills}</div>
+          </AnchorLink>
         </div>
         <div>
-          <img style={{ width: "25px" }} src={portfolio} alt="" />
-          <div>{texts.portfolio}</div>
+          <AnchorLink
+            onClick={handleMenuBar}
+            className="anchor-mobile"
+            href="#section-portfolio"
+          >
+            <img style={{ width: "25px" }} src={portfolio} alt="" />
+            <div>{texts.portfolio}</div>
+          </AnchorLink>
         </div>
         <div>
           <img style={{ width: "25px" }} src={about} alt="" />
-          <div>{texts.about}</div>
+          <div>
+            <AnchorLink
+              onClick={handleMenuBar}
+              className="anchor-mobile"
+              href="#"
+            >
+              {texts.about}
+            </AnchorLink>
+          </div>
         </div>
       </div>
       <div className="container-mobile-menu">

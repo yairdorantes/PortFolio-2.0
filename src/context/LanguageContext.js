@@ -6,6 +6,8 @@ const initialLanguage = "es";
 const introEs =
   "Desarrollador web apasionado por innovar y resolver problemas en el entorno web";
 
+// const introEs = "Desarrolla web";
+
 const introEn =
   "Web developer passionate about innovating and solving problems in web enviroment";
 const translations = {
