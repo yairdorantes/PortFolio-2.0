@@ -9,7 +9,7 @@ import git from "./media/git.png";
 import github from "./media/github.png";
 import sql from "./media/sql.png";
 import json from "./media/json.png";
-import cv from "./media/doc.png";
+import cv from "./media/green_doc.png";
 import LanguageContext from "../context/LanguageContext";
 import { useContext, useEffect, useState } from "react";
 const iconImage = [
@@ -45,8 +45,8 @@ const Skills = () => {
 
   return (
     <>
-      <section className="section-top-skill">
-        <section className="skill-section" id="skills-section">
+      <section className="section-top-skill" id="skills-section">
+        <section className="skill-section">
           <div className="container-skill-titles">
             <div className={"skill-title"}>{texts.skills}</div>
             <div>{texts.skillSubtitle}</div>

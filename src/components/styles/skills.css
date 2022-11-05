@@ -4,34 +4,29 @@
 .skill-section {
   margin: auto;
   width: 350px;
-  /* margin-top: -66px; */
+  /* margin-top: %; */
 }
 .container-skills {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  /* width: 350px; */
-  /* margin: auto; */
 }
-/* .skill {
-  flex: 25.33%;
-} */
 
 .skill-icon {
   width: 50px;
 }
 .container-btn-cv {
   display: flex;
-  background-color: rgb(1, 124, 162);
-  width: 145px;
+  background-color: transparent;
+  width: 155px;
   border-radius: 5px;
   justify-content: space-evenly;
   padding: 7px;
   margin: auto;
   cursor: pointer;
-  animation: increase 1s infinite ease-in-out;
+  /* animation: increase 1s infinite ease-in-out; */
   animation-direction: alternate;
-  border: solid green;
+  border: solid 1px #009571;
 }
 .cv {
   width: 25px;
@@ -41,6 +36,7 @@
   background-color: transparent;
   border: none;
   margin-left: 5px;
+  color: #0beeb9;
 }
 
 .container-skill-titles {
@@ -51,7 +47,7 @@
 }
 
 .skill-title {
-  color: black;
+  color: #b0cdf1;
   font-size: 35px;
   font-weight: 600;
 }

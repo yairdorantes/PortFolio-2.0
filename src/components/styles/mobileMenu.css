@@ -1,0 +1,76 @@
+.container-mobile-menu {
+  position: fixed;
+  background-color: rgb(3, 50, 34);
+  /* bottom: -1px; */
+  width: 100vw;
+  background: black;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0;
+}
+.container-mobile-menu > div {
+  margin: 10px;
+}
+.container-all-menus-mobile {
+  position: fixed;
+  /* background-color: white; */
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  transition: ease-in-out 0.5s;
+  font-size: 14px;
+
+  /* animation: raise 1s; */
+  bottom: -25%;
+  /* z-index: 1; */
+}
+
+.hide-menu-mobile {
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  transition: all 1s;
+  z-index: 1;
+  bottom: 35px;
+  font-size: 14px;
+}
+.hide-menu-mobile > div {
+  flex: 33.33%;
+  text-align: center;
+}
+
+.container-all-menus-mobile > div {
+  flex: 33.33%;
+  text-align: center;
+  margin-top: 10px;
+}
+.hide-menu-mobile > div {
+  margin-top: 10px;
+}
+
+.mobile-sub-icons > img {
+  margin-right: 15px;
+}
+
+.name-mobile-menu {
+  float: left;
+}
+
+.sub-options-menu-mobile {
+  float: right;
+}
+.menu-icon-mobile {
+  width: 25px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .container-mobile-menu {
+    opacity: 1;
+  }
+}

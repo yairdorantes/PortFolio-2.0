@@ -13,10 +13,86 @@ body {
   font-family: var(--body-font);
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  background-color: #06101e;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
 }
 .container-body {
   /* margin: 10px; */
   /* width: 70%; */
   /* padding: 100px; */
   margin: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* form contact */
+.form {
+  width: 100%;
+  height: 440px;
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: auto;
+  margin-bottom: 2px;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  /* font-family: "Montserrat", sans-serif; */
+  position: relative;
+  background-color: rgb(19, 23, 44);
+}
+
+.form-h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  color: #60ffd9;
+  border-bottom: 3px solid #78788c;
+}
+input {
+  color: white;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  /* font-family: "Montserrat", sans-serif; */
+  transition: all 0.3s;
+  border-bottom: 2px solid #78788c;
+}
+input::placeholder {
+  color: #a9a297;
+}
+input:focus {
+  border-bottom: 2px solid #bebed2;
+}
+.parrafo:before {
+  content: attr(type);
+  display: block;
+  margin: 15px 0 0;
+  font-size: 14px;
+  color: #60ffd9;
+}
+.btn-form {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  /* font-family: "Montserrat", sans-serif; */
+  border: 2px solid #78788c;
+  background: 0;
+  color: #60ffd9;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+.btn-form:hover {
+  background: #0bffc6;
+  color: rgb(19, 23, 44);
+}
+#contact > h1 {
+  color: #69f30e;
 }

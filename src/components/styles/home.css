@@ -28,7 +28,7 @@
 }
 
 .social-media-work {
-  width: 30px;
+  width: 35px;
 }
 .container-mine {
   width: 450px;
@@ -36,13 +36,17 @@
 }
 .greeting {
   font-weight: 600;
-  font-size: 50px;
+  font-size: 60px;
 }
 .position {
-  font-size: 20px;
+  font-size: 30px;
+  color: #a9a297;
+  font-weight: 600;
 }
 .my-description {
   font-weight: 500;
+  color: #a9a297;
+  /* font-size: 18px; */
 }
 
 .headshot {
@@ -63,4 +67,28 @@
   border-radius: 50%;
   background-image: url("../media/master.jpg"),
     linear-gradient(to bottom right, #ff3cac, #562b7c, #2b86c5);
+}
+
+.modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: aliceblue;
+  /* background-color: #000000a7; */
+}
+
+.btn-contact-me {
+  /* margin: 100px; */
+  margin-top: 15px;
+}
+.tache {
+  animation: rotate 1s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes rotate {
+  100% {
+    transform: scale(1.2);
+  }
 }

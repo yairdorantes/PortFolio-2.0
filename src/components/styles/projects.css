@@ -24,12 +24,10 @@
   /* height: 250px; */
   /* max-height: 250px; */
   border-radius: 10px;
-  box-shadow: 0 0 35px #ffff00;
 }
 .image-project {
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0 0 35px #e5ff00;
   min-height: 220px;
 }
 
@@ -53,6 +51,9 @@
 .made-with {
   width: 25px;
   margin: 5px;
+}
+.title-projects {
+  text-align: center;
 }
 
 @media only screen and (min-width: 1200px) {
