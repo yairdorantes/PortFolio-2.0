@@ -33,17 +33,16 @@ const MobileMenu = () => {
         className={isHide ? "container-all-menus-mobile" : "hide-menu-mobile"}
       >
         <div>
-          <img style={{ width: "25px" }} src={home} alt="" />
-          <div>
-            <AnchorLink
-              onClick={handleMenuBar}
-              className="anchor-mobile"
-              href="#home"
-            >
-              {texts.home}
-            </AnchorLink>
-          </div>
+          <AnchorLink
+            onClick={handleMenuBar}
+            className="anchor-mobile"
+            href="#home"
+          >
+            <img style={{ width: "25px" }} src={home} alt="" />
+            <div>{texts.home}</div>
+          </AnchorLink>
         </div>
+
         <div>
           <AnchorLink
             onClick={handleMenuBar}

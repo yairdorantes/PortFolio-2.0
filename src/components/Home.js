@@ -13,7 +13,7 @@ const customStyles = {
     height: "443px",
     backgroundColor: "rgb(19, 23, 44)",
     outline: "none",
-    borderRadius: "10px",
+
     overflow: "auto",
     borderRadius: "8px",
   },
@@ -22,15 +22,9 @@ const customStyles = {
 const Home = () => {
   const { texts } = useContext(LanguageContext);
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [spin, setSpin] = useState(false);
+  // const [spin, setSpin] = useState(false);
   const openModal = () => {
-    if (modalIsOpen) {
-      setModalIsOpen(false);
-      setSpin(false);
-    } else {
-      setSpin(true);
-      setModalIsOpen(true);
-    }
+    modalIsOpen ? setModalIsOpen(false) : setModalIsOpen(true);
   };
 
   const hideModal = () => {
