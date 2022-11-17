@@ -110,7 +110,9 @@ const Projects = () => {
                       );
                     })}
                   </div>
-                  <a href="">Link</a>
+                  <a href={project.url} className="link-project">
+                    Link
+                  </a>
                 </div>
               </div>
             );

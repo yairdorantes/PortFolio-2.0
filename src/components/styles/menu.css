@@ -5,13 +5,14 @@
   position: fixed;
   background-color: white;
   justify-content: space-between;
-  /* margin-top: -60px; */
+  top: 0;
   transition: 0.8s;
   z-index: 1;
   background-color: #06101ea8;
   color: #60ffd9;
   backdrop-filter: blur(4px);
   opacity: 0;
+  /* background-color: green; */
 }
 
 .my-name-menu {
@@ -42,49 +43,6 @@
   width: 28px;
 }
 
-.btn-contact-me {
-  font-family: inherit;
-  font-size: 20px;
-  background: royalblue;
-  color: white;
-  padding: 0.7em 1em;
-  padding-left: 0.9em;
-  display: flex;
-  align-items: center;
-  border: none;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: all 0.2s;
-}
-
-.btn-contact-me span {
-  display: block;
-  margin-left: 0.3em;
-  transition: all 0.3s ease-in-out;
-}
-
-.btn-contact-me svg {
-  display: block;
-  transform-origin: center center;
-  transition: transform 0.3s ease-in-out;
-}
-
-.btn-contact-me:hover .svg-wrapper {
-  animation: fly-1 0.6s ease-in-out infinite alternate;
-}
-
-.btn-contact-me:hover svg {
-  transform: translateX(2.8em) rotate(45deg) scale(1.1);
-}
-
-.btn-contact-me:hover span {
-  transform: translateX(10em);
-}
-
-.btn-contact-me:active {
-  transform: scale(0.95);
-}
-
 @keyframes fly-1 {
   from {
     transform: translateY(0.1em);
@@ -98,5 +56,8 @@
 @media only screen and (min-width: 1200px) {
   .container-menu-portfolio {
     opacity: 1;
+  }
+  .container-home {
+    padding-top: 75px;
   }
 }

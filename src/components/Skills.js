@@ -1,9 +1,12 @@
 import "./styles/skills.css";
 import python from "./media/python.png";
 import js from "./media/js.png";
+import ts from "./media/typescript.png";
+
 import django from "./media/django.png";
 import html from "./media/html.png";
 import css from "./media/css.png";
+import sass from "./media/sass.png";
 import reacts from "./media/react.png";
 import git from "./media/git.png";
 import github from "./media/github.png";
@@ -15,7 +18,9 @@ import { useContext, useEffect, useState } from "react";
 const iconImage = [
   html,
   css,
+  sass,
   js,
+  ts,
   reacts,
   python,
   django,

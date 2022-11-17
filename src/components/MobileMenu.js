@@ -9,17 +9,20 @@ import home from "./media/home.png";
 import about from "./media/profile.png";
 import LanguageContext from "../context/LanguageContext";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-
+import { useEffect } from "react";
 const MobileMenu = () => {
-  const { texts, handleLanguage } = useContext(LanguageContext);
-  const [lang, setLang] = useState("es");
+  const [lang, setLangMobile] = useState("es");
   const [isHide, setIsHide] = useState(true);
+  const { texts, handleLanguage } = useContext(LanguageContext);
 
   const changeLanguage = () => {
     console.log(lang);
-    lang === "es" ? setLang("en") : setLang("es");
+    lang === "es" ? setLangMobile("en") : setLangMobile("es");
     handleLanguage(lang);
   };
+  useEffect(() => {
+    changeLanguage();
+  }, []);
 
   const handleMenuBar = () => {
     isHide ? setIsHide(false) : setIsHide(true);
