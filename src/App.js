@@ -3,16 +3,18 @@ import Home from "./components/Home";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import MobileMenu from "./components/MobileMenu";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <>
       <div className="container-body">
-        <MobileMenu></MobileMenu>
-        <Menu></Menu>
-        <Home></Home>
-        <Skills></Skills>
-        <Projects></Projects>
+        {/* <MobileMenu></MobileMenu> */}
+        {/* <Menu></Menu> */}
+        <NavBar />
+        <Home />
+        <Skills />
+        <Projects />
       </div>
     </>
   );

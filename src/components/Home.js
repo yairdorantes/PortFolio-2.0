@@ -1,11 +1,12 @@
 import "./styles/home.css";
-import linkedin from "./media/nowlink.png";
-import github from "./media/github3.png";
+import linkedin from "./media/linkedin.png";
+import github from "./media/github.png";
 import crossout from "./media/crossout.png";
 import LanguageContext from "../context/LanguageContext";
 import { useContext, useState } from "react";
 import Modal from "react-modal";
 import OutsideClickHandler from "react-outside-click-handler";
+import face from "./media/master.jpg";
 const customStyles = {
   content: {
     color: "white",
@@ -26,7 +27,6 @@ const Home = () => {
   const openModal = () => {
     modalIsOpen ? setModalIsOpen(false) : setModalIsOpen(true);
   };
-
   const hideModal = () => {
     setModalIsOpen(false);
   };
@@ -83,44 +83,50 @@ const Home = () => {
         </OutsideClickHandler>
       </Modal>
       <section id="home">
-        <div className="container-home">
-          <div className="greeting">{texts.greeting}</div>
-          <div className="position">
-            <strong>{texts.position}</strong>
+        <div className="flex flex-col gap-4 items-center mt-[61px] lg:mt-[77px]">
+          <div className="text-green-300 text-4xl font-extrabold mt-8">
+            {texts.greeting}
           </div>
-          <p className="my-description">{texts.master}</p>
-          <div className="container-social-media-work">
-            <div>
-              <a href="https://www.linkedin.com/in/yair-dorantes-25a74a1a8/">
-                <img className="social-media-work" src={linkedin} alt="" />
-              </a>
-            </div>
-            <div>
-              <a href="https://github.com/yairdorantes">
-                <img className="social-media-work" src={github} alt="" />
-              </a>
+
+          <div className="font-medium text-2xl">{texts.position}</div>
+
+          <p className="text-gray-300 w-3/4 text-center lg:w-[400px]">
+            {texts.master}
+          </p>
+          <div className="avatar mt-5">
+            <div className="w-56 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+              <img src={face} />
             </div>
           </div>
-          <div className="my-image">
-            <div className="headshot headshot-2"></div>
-            <button onClick={openModal} className="btn-contact-me">
-              <div className="svg-wrapper-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  height="24"
-                >
-                  <path fill="none" d="M0 0h24v24H0z"></path>
-                  <path
-                    fill="currentColor"
-                    d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
-                  ></path>
-                </svg>
-              </div>
-              <span>{texts.btnContact}</span>
-            </button>
+          <div className="container-social-media-work mt-10">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/yair-dorantes-25a74a1a8/"
+            >
+              <img className="social-media-work" src={linkedin} alt="" />
+            </a>
+
+            <a target="_blank" href="https://github.com/yairdorantes">
+              <img className="social-media-work" src={github} alt="" />
+            </a>
           </div>
+          <button onClick={openModal} className="btn-contact-me">
+            <div className="svg-wrapper-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path
+                  fill="currentColor"
+                  d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                ></path>
+              </svg>
+            </div>
+            <span>{texts.btnContact}</span>
+          </button>
         </div>
       </section>
     </>

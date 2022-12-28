@@ -63,7 +63,7 @@ const MobileMenu = () => {
             <div>{texts.portfolio}</div>
           </AnchorLink>
         </div>
-        <div>
+        {/* <div>
           <img style={{ width: "25px" }} src={about} alt="" />
           <div>
             <AnchorLink
@@ -74,7 +74,7 @@ const MobileMenu = () => {
               {texts.about}
             </AnchorLink>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="container-mobile-menu">
         <div className="name-mobile-menu">

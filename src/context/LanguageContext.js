@@ -10,6 +10,7 @@ const introEs =
 
 const introEn =
   "Web developer passionate about innovating and solving problems in web enviroment";
+
 const translations = {
   es: {
     home: "Inicio",
@@ -29,6 +30,11 @@ const translations = {
     inputMessage: "Mensaje",
     btnSendMessage: "Enviar Mensaje",
     titleProjects: "Projectos que he hecho",
+    made: "Hecho con",
+    weatherApp: "Clima App",
+    englishApp: "Aprendizaje de Ingles",
+    gym: "Página para gimnasio",
+    resume: "Resumen",
   },
   en: {
     home: "Home",
@@ -48,9 +54,13 @@ const translations = {
     placeMessage: "Write your message",
     btnSendMessage: "Send message",
     titleProjects: "Projects i've build",
+    made: "Made with",
+    weatherApp: "Weather App",
+    englishApp: "English learning",
+    gym: "Web for a GYM",
+    resume: "Resume",
   },
 };
-
 const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState(initialLanguage);
   const [texts, setTexts] = useState(translations[language]);

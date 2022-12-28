@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
   --body-font: "Poppins", sans-serif;
   /* --weight-font:font */
@@ -9,7 +11,14 @@
   padding: 0;
   /* background-color: #06101e; */
 }
+.titles {
+  @apply text-center font-bold text-4xl text-cyan-300;
+}
+.sub-titles {
+  @apply text-center py-2 text-gray-300;
+}
 body {
+  scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: var(--body-font);
   font-family: "Poppins", sans-serif;
