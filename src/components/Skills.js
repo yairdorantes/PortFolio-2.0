@@ -14,7 +14,6 @@ import tailwind from "./media/tailwind.png";
 import nodejs from "./media/nodejs.png";
 import sql from "./media/sql.png";
 import json from "./media/json.png";
-import cv from "./media/green_doc.png";
 import LanguageContext from "../context/LanguageContext";
 import { useContext, useEffect, useState } from "react";
 import pdf from "./media/yair.pdf";

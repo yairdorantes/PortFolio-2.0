@@ -5,7 +5,6 @@ import js from "./media/js.png";
 import react from "./media/react.png";
 import python from "./media/python.png";
 import django from "./media/django.png";
-import urls from "./media/url.png";
 import github from "./media/github.png";
 import tictac from "./media/projects/tictac.mkv";
 import engl from "./media/projects/eng.mp4";
